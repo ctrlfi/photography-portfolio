@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CTRL Visuals</title>
+
+  <!-- SEO & Meta -->
+  <meta name="description"
+    content="CTRL Visuals: Digital content creation services that help businesses create high-quality, engaging content that drives results." />
+
+  <!-- Fonts: Inter Tight & Roboto Mono as per Framer export -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=Roboto+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=5" />
+</head>
+
+<body>
+
+  <!-- Shutter Loader (Carried over from previous session to integrate) -->
+  <div id="loader">
+    <div class="shutter shutter-top"></div>
+    <div class="shutter shutter-bottom"></div>
+    <div class="loader-lens">
+      <div class="focus-bracket bracket-left"></div>
+      <span class="loader-logo-p">CTRL</span>
+      <div class="focus-bracket bracket-right"></div>
+    </div>
+    <div class="camera-flash"></div>
+  </div>
+
+  <div id="main-content">
+
+    <!-- Top Navigation -->
+    <header class="navbar" id="top">
+      <div class="nav-container">
+        <!-- Logo -->
+        <a href="#top" class="nav-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" fill="currentColor">
+            <!-- Simplified star/sparkle icon from framer SVG -->
+            <path d="M128,16 L144,112 L240,128 L144,144 L128,240 L112,144 L16,128 L112,112 Z"></path>
+          </svg>
+          <span class="nav-brand">CTRL</span>
+        </a>
+
+        <!-- Menu actions -->
+        <div class="nav-actions">
+          <button id="menu-toggle" class="nav-menu-link"
+            style="background: none; border: none; cursor: pointer; color: white;">MENU</button>
+          <button aria-label="Search" class="search-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" fill="currentColor">
+              <path
+                d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-tagline">
+        <div class="pulse-indicator">
+          <div class="pulse-ring"></div>
+          <div class="pulse-core"></div>
+        </div>
+        <span class="tagline-text">Available for business</span>
+      </div>
+
+      <div class="hero-titles">
+        <h1 class="hero-title">ctrl</h1>
+        <h1 class="hero-title">visuals</h1>
+      </div>
+    </section>
+
+    <!-- Project Grid (Extracted from Framer) -->
+    <section class="projects-grid">
+      <!-- We will populate the project cards next based on the framer source -->
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-text">© 2026 CTRL VISUALS • All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#" class="footer-link">Instagram</a>
+          <a href="#" class="footer-link">Twitter</a>
+          <a href="#" class="footer-link">Email</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Fullscreen Menu Overlay -->
+  <div id="menu-overlay" class="menu-overlay">
+    <div class="menu-content">
+      <nav class="menu-nav">
+        <a href="#home" class="menu-link menu-item">Home</a>
+        <a href="#work" class="menu-link menu-item">Work</a>
+        <a href="#about" class="menu-link menu-item">About</a>
+        <a href="#contact" class="menu-link menu-item">Contact</a>
+      </nav>
+      <div class="menu-socials">
+        <a href="#" class="menu-social-link menu-item">Instagram</a>
+        <a href="#" class="menu-social-link menu-item">Twitter</a>
+        <a href="#" class="menu-social-link menu-item">Inquiries</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=9"></script>
+</body>
+
+</html>
