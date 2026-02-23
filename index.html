@@ -2,123 +2,101 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CTRL Visuals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedro Gerez | Photography</title>
+  <meta name="description" content="Ethereal Glass Photography Portfolio">
 
-  <!-- SEO & Meta -->
-  <meta name="description"
-    content="CTRL Visuals: Digital content creation services that help businesses create high-quality, engaging content that drives results." />
-
-  <!-- Fonts: Inter Tight & Roboto Mono as per Framer export -->
+  <!-- Fonts: Playfair Display for headers, Inter for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&family=Roboto+Mono:wght@400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet">
 
-  <!-- Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Spline 3D Viewer -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 
 <body>
+  <!-- Advanced Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <!-- Shutter Loader (Carried over from previous session to integrate) -->
-  <div id="loader">
-    <div class="shutter shutter-top"></div>
-    <div class="shutter shutter-bottom"></div>
-    <div class="loader-lens">
-      <div class="focus-bracket bracket-left"></div>
-      <span class="loader-logo-p">CTRL</span>
-      <div class="focus-bracket bracket-right"></div>
-    </div>
-    <div class="camera-flash"></div>
+  <!-- Ambient Background Gradients -->
+  <div class="ambient-bg">
+    <div class="gradient-sphere sphere-1"></div>
+    <div class="gradient-sphere sphere-2"></div>
+    <div class="gradient-sphere sphere-3"></div>
   </div>
 
-  <div id="main-content">
+  <!-- Glassmorphism Navigation -->
+  <nav class="glass-nav">
+    <div class="logo">CTRL Visuals</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="magnetic">Home</a></li>
+      <li><a href="#gallery" class="magnetic">Selected Works</a></li>
+      <li><a href="#contact" class="magnetic">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Top Navigation -->
-    <header class="navbar" id="top">
-      <div class="nav-container">
-        <!-- Logo -->
-        <a href="#top" class="nav-logo">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" fill="currentColor">
-            <!-- Simplified star/sparkle icon from framer SVG -->
-            <path d="M128,16 L144,112 L240,128 L144,144 L128,240 L112,144 L16,128 L112,112 Z"></path>
-          </svg>
-          <span class="nav-brand">CTRL</span>
-        </a>
+  <!-- Spline Canvas Backdrop -->
+  <!-- Positioned absolutely behind the rest of the flow -->
+  <spline-viewer id="spline-bg" url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
 
-        <!-- Menu actions -->
-        <div class="nav-actions">
-          <button id="menu-toggle" class="nav-menu-link"
-            style="background: none; border: none; cursor: pointer; color: white;">MENU</button>
-          <button aria-label="Search" class="search-btn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="24" height="24" fill="currentColor">
-              <path
-                d="M232.49,215.51,185,168a92.12,92.12,0,1,0-17,17l47.53,47.54a12,12,0,0,0,17-17ZM44,112a68,68,0,1,1,68,68A68.07,68.07,0,0,1,44,112Z" />
-            </svg>
-          </button>
-        </div>
-      </div>
-    </header>
-
+  <main>
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-tagline">
-        <div class="pulse-indicator">
-          <div class="pulse-ring"></div>
-          <div class="pulse-core"></div>
-        </div>
-        <span class="tagline-text">Available for business</span>
-      </div>
-
-      <div class="hero-titles">
-        <h1 class="hero-title">ctrl</h1>
-        <h1 class="hero-title">visuals</h1>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="ethereal-text">Capturing<br><span>The Unseen</span></h1>
+        <p class="subtitle">A visual exploration of light, shadow, and architecture.</p>
+        <a href="#gallery" class="btn-primary magnetic">Explore Portfolio</a>
       </div>
     </section>
 
-    <!-- Project Grid (Extracted from Framer) -->
-    <section class="projects-grid">
-      <!-- We will populate the project cards next based on the framer source -->
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Selected Works</h2>
+      <div class="masonry-grid" id="masonry-grid">
+        <!-- Javascript will populate this grid dynamically -->
+      </div>
     </section>
 
-    <!-- Minimal Footer -->
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p class="footer-text">© 2026 CTRL VISUALS • All Rights Reserved.</p>
-        <div class="footer-links">
-          <a href="#" class="footer-link">Instagram</a>
-          <a href="#" class="footer-link">Twitter</a>
-          <a href="#" class="footer-link">Email</a>
-        </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="glass-panel contact-panel">
+        <h2>Let's Create</h2>
+        <p>Available for freelance opportunities globally.</p>
+        <form class="contact-form">
+          <div class="input-group">
+            <input type="text" id="name" required placeholder=" ">
+            <label for="name">Your Name</label>
+          </div>
+          <div class="input-group">
+            <input type="email" id="email" required placeholder=" ">
+            <label for="email">Email Address</label>
+          </div>
+          <div class="input-group">
+            <textarea id="message" required placeholder=" " rows="4"></textarea>
+            <label for="message">Project Details</label>
+          </div>
+          <button type="submit" class="btn-primary magnetic">Send Inquiry</button>
+        </form>
       </div>
-    </footer>
+    </section>
+  </main>
 
+  <!-- Lightbox Overlay -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-close magnetic"><span></span><span></span></div>
+    <img src="" alt="Expanded View" class="lightbox-img">
+    <div class="lightbox-caption"></div>
   </div>
 
-  <!-- Fullscreen Menu Overlay -->
-  <div id="menu-overlay" class="menu-overlay">
-    <div class="menu-content">
-      <nav class="menu-nav">
-        <a href="#home" class="menu-link menu-item">Home</a>
-        <a href="#work" class="menu-link menu-item">Work</a>
-        <a href="#about" class="menu-link menu-item">About</a>
-        <a href="#contact" class="menu-link menu-item">Contact</a>
-      </nav>
-      <div class="menu-socials">
-        <a href="#" class="menu-social-link menu-item">Instagram</a>
-        <a href="#" class="menu-social-link menu-item">Twitter</a>
-        <a href="#" class="menu-social-link menu-item">Inquiries</a>
-      </div>
-    </div>
-  </div>
-
-  <script src="app.js?v=9"></script>
+  <!-- Main JavaScript -->
+  <script type="module" src="app.js?v=3"></script>
 </body>
 
 </html>
